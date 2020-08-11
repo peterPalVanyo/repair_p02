@@ -1,8 +1,203 @@
-*, ::before, ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+h1 {
+  font-size: 5rem;
+  font-family: "Playfair Display", serif;
+  margin: 0 0 2rem 0;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+}
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+p,
+label {
+  margin: 0 0 1rem 0;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+i {
+  font-size: 100px;
+  opacity: 0.2;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+}
+.cards a {
+  text-decoration: none;
+  color: white;
+}
+.cards p {
+  font-size: 1.4rem;
+}
+li {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
 }
 html {
-    font-size: 62.5%;
+  /* height: 100%; */
+  background-color: #fc5e55;
+  background-image: linear-gradient(45deg, #fc5e55 0%, #fa4083 100%);
+}
+body {
+  background-image: url(./images/image-lion-background.png);
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.container {
+  min-height: 60rem;
+  width: 102.4rem;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid beige;
+}
+header .logo {
+  padding: 2rem;
+}
+header .navigation {
+  display: flex;
+  flex-direction: row;
+}
+main {
+  min-height: 30rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main2 {
+  display: block;
+  padding-top: 50px;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.card1 {
+  background-image: url(./images/image-background-card1-b.jpg);
+}
+.card2 {
+  background-image: url(./images/image-background-card2-b.jpg);
+}
+.card3 {
+  background-image: url(./images/image-background-card3-b.jpg);
+}
+.herobox1 {
+  flex: 2;
+  padding-right: 10rem;
+}
+.herobox2 {
+  flex: 1;
+}
+.herobox2 > img {
+  height: auto;
+  width: 100%;
+}
+.card1,
+.card2,
+.card3 {
+  padding: 20px 30px;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 25rem;
+  width: 30%;
+  /* box-sizing: border-box; */
+}
+.myButton {
+  background-color: white;
+  color: #fc5e55;
+  padding: 10px 20px;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.myButton:hover {
+  transition: all 0.5s ease-in-out;
+  background-color: thistle;
+}
+.linkButton {
+  padding: 10px 20px;
+  border: 1px solid white;
+  font-family: "Playfair Display", serif;
+  margin-right: 10px;
+  position: relative;
+  display: inline-block;
+  background-color: transparent;
+  color: white;
+}
+.linkButton:hover .dropDowns {
+  display: block;
+}
+.dropDowns {
+  position: absolute;
+  text-align: center;
+  top: 1;
+  left: 0.5;
+  transform: translate(-25%, 10px);
+  display: none;
+}
+.dropDowns .linkButton {
+  min-width: 180px;
+  background-color: white;
+  margin-top: 5px;
+}
+.dropDowns .linkButton a {
+  color: #fa4083;
+  border-color: #fa4083;
+}
+.dropDowns .linkButton:hover {
+  background-image: linear-gradient(45deg, #fc5e55 0%, #fa4083 50%);
+  border-color: white;
+}
+.dropDowns .linkButton:hover a {
+  color: white;
+}
+.shadowed {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.tbox {
+  width: 47%;
+  padding: 50px;
+  border: 1px solid white;
+  margin-top: 50px;
+}
+.tbox :last-child {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+.formWrapper {
+    margin-bottom: 30px;
+}
+
+input[type=text], input[type=email], textarea {
+    padding: 12px 20px;
+    width: 40%;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    width: 100%;
+}
+.newLiner {
+    display: block;
+    margin-bottom: 5px;
+}
+input:nth-of-type(2)[type=radio] {
+    margin-left: 20px;
 }
